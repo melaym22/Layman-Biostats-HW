@@ -46,6 +46,7 @@ ggplot (compensation, aes (x=Root,y=Fruit))+
   geom_point (size=5)+ #makes the points ridiculously large
   theme_bw()
 ```
+
 ```{r}
 ggplot (compensation, aes (x=Root,y=Fruit))+
   geom_point (size=5)+
@@ -53,6 +54,7 @@ ggplot (compensation, aes (x=Root,y=Fruit))+
   ylab("Fruit Production")+ #yaxis label
   theme_bw()
 ```
+
 ```{r}
 # changes colors of points to match specific levels in a group
 # must've been from NZ or something again who spells colour like that
@@ -62,6 +64,7 @@ ggplot (compensation, aes (x=Root,y=Fruit, colour=Grazing))+
   ylab("Fruit Production")+ #yaxis label
   theme_bw()
 ```
+
 ```{r}
 # separates points by shape
 ggplot (compensation, aes (x=Root,y=Fruit, shape=Grazing))+
@@ -72,6 +75,7 @@ ggplot (compensation, aes (x=Root,y=Fruit, shape=Grazing))+
 ```
 
 ## Boxplots
+
 ```{r}
 ggplot (compensation, aes (x=Grazing,y=Fruit))+
   geom_boxplot() + # makes a boxplot
@@ -79,6 +83,7 @@ ggplot (compensation, aes (x=Grazing,y=Fruit))+
   ylab("Fruit Production")+ #yaxis label
   theme_bw()
 ```
+
 ```{r}
 ggplot (compensation, aes (x=Grazing,y=Fruit))+
   geom_boxplot() + # makes a boxplot
@@ -87,23 +92,24 @@ ggplot (compensation, aes (x=Grazing,y=Fruit))+
   ylab("Fruit Production")+ #yaxis label
   theme_bw()
 ```
+
 ## Histogram
+
 ```{r}
 ggplot(compensation,aes(x=Fruit))+
   geom_histogram(bins=10) # num of bins changes or
 # alt (binwidth) binwidth changes width of each bar
 ```
+
 ```{r}
 # using facet wraps
 ggplot(compensation,aes(x=Fruit))+
   geom_histogram(binwidth=15)+
   facet_wrap (~Grazing) # separates graphs
 ```
+
 ## Saving work
+
 ```{r}
 ggsave("ThatCoolHistogramofFruit.png")
 ```
-
-
-
-

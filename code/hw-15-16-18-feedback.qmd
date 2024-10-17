@@ -1,0 +1,29 @@
+---
+title: "homework feedback"
+format: html
+editor: visual
+---
+
+## Homework feedback
+
+### Homework 15
+
+I deleted the extra copy of HW 15 that you had in the root directory of your project.
+
+This homework looks good - you might try to add a bit more information where you add some scientific thinking. For example, on line 28 where you wrote "subsetting" you might add more information. e.g. "I can use the `select` function to choose columns and the `slice` function to choose rows. I can use the `filter` function to grab a subseet of rows and columns.
+
+### Homework 16
+
+You do not have the "donnerville_percent_cover" dataset in your data folder, so I am unable to run your code. I thus cannot give you complete credit for this homework.
+
+I looked over your code and suggest you try the `mdy` function from the `lubridate` package (which comes installed with `tidyverse`) to fix the column (lines 48 - 59). You don't want to be using `which` there.
+
+On line 97, put that comment, which is really about what you are trying to do rather than the actual code, outside of the code chunk.
+
+### Homework 18
+
+Looks good.
+
+### Other
+
+I also tweaked your .gitignore file to ignore .DS_Store and .html files. Make sure to pull this change into your main project.
